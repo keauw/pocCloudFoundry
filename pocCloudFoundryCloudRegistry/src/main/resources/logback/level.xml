@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<included>
+
+    <logger name="com.netflix" level="DEBUG"/>
+    <logger name="com.netflix.loadbalancer" level="INFO"/>
+    
+    <logger name="org.springframework" level="INFO"/>
+    <logger name="org.springframework.web.servlet.DispatcherServlet" level="INFO"/>
+    <logger name="org.springframework.security" level="INFO"/>
+    
+<!-- 	<logger name="org.apache.http" level="DEBUG"/> -->
+<!-- 	<logger name="httpclient.wire" level="DEBUG"/> -->
+</included>

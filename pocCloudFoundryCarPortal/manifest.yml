@@ -1,0 +1,9 @@
+applications:
+- name: car-portal
+  memory: 800M
+  path: target/car-portal-1.0-SNAPSHOT.war
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+  services:
+  - eureka
+  - configserver

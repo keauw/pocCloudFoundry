@@ -1,0 +1,9 @@
+applications:
+- name: service-wheel
+  memory: 800M
+  path: target/service-wheel-1.0-SNAPSHOT.war
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+  services:
+  - eureka
+  - configserver

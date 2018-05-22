@@ -1,0 +1,19 @@
+app: 
+  build:
+    name: "@project.name@"
+    artifact: "@project.artifactId@"
+    version: "@project.version@"
+    timestamp: "@project.build.timestamp@"
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.eureka.credentials.uri}/eureka/ 
+
+feign:
+    hystrix: 
+        enabled: true           
+        
+gateway:
+  service-name: circuit-breaker-gateway        

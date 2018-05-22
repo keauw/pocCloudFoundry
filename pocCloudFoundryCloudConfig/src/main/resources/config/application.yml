@@ -1,0 +1,24 @@
+app: 
+  build:
+    name: "@project.name@"
+    artifact: "@project.artifactId@"
+    version: "@project.version@"
+    timestamp: "@project.build.timestamp@"
+
+
+spring:
+  application:
+    name: config-server
+
+management.security.enabled: false
+
+
+#spring.cloud.config.server.git.uri: https://github.com/keauw/pocCloudFoundry.git
+spring.cloud.config.server.native.searchLocations: classpath:/app-config
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.eureka.credentials.uri}/eureka/
+      
+   

@@ -1,0 +1,7 @@
+---
+applications:
+- name: registry-server
+  memory: 800M
+  path: target/registry-server-1.0-SNAPSHOT.war
+  env:
+    SPRING_PROFILES_ACTIVE: cloud

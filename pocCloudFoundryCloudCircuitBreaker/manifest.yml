@@ -1,0 +1,8 @@
+applications:
+- name: circuit-breaker-gateway
+  memory: 800M
+  path: target/circuit-breaker-gateway-1.0-SNAPSHOT.war
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+  services:
+  - eureka

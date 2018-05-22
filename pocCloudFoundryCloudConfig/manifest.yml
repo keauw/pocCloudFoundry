@@ -1,0 +1,9 @@
+---
+applications:
+- name: config-server
+  path: target/config-server-1.0-SNAPSHOT.war
+  memory: 800M
+  env:
+    SPRING_PROFILES_ACTIVE: native,cloud
+  services:
+  - eureka

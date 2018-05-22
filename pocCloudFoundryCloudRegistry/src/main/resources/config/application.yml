@@ -1,0 +1,18 @@
+app: 
+  build:
+    name: "@project.name@"
+    artifact: "@project.artifactId@"
+    version: "@project.version@"
+    timestamp: "@project.build.timestamp@"
+
+
+spring:
+  application:
+    name: registry-server
+
+management.security.enabled: false
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

@@ -1,0 +1,26 @@
+app: 
+  build:
+    name: "@project.name@"
+    artifact: "@project.artifactId@"
+    version: "@project.version@"
+    timestamp: "@project.build.timestamp@"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.eureka.credentials.uri}/eureka/
+
+management.security.enabled: false
+
+spring:
+  application:
+    name: circuit-breaker-gateway
+
+zuul:
+  ignoredServices: '*'
+  sensitiveHeaders:
+  routes:
+    service-engine:
+      path: /engine/**
+    service-wheel:
+      path: /wheel/**

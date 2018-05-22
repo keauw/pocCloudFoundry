@@ -1,0 +1,10 @@
+    
+eureka:
+  instance:
+    nonSecurePort: 80
+    hostname: ${vcap.application.uris[0]}
+
+    
+#spring:
+#  cloud:
+#    config.uri: ${vcap.services.configserver.credentials.uri}     
