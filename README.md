@@ -62,7 +62,7 @@ Add syslog to each application
 
  
 
- 
+ ![alt text](https://github.com/keauw/pocCloudFoundry/blob/master/CFDemoDiagram.png)
 
  
 
